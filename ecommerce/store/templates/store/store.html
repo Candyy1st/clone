@@ -1,0 +1,43 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title></title>-->
+<!--</head>-->
+<!--<body>-->
+
+
+<!--</body>-->
+<!--</html>-->
+
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+
+<!--<h1>Store</h1>-->
+<div class="row">
+    <div class="col-lg-4">
+        <img class="thumbnail" src="{% static 'images/placeholder.png' %}">
+        <div class="box-element product">
+            <h1>Product</h1>
+            <hr>
+            <button class="btn btn-outline-secondary add-btn">Add to Cart</button>
+            <a class="btn btn-outline success" href="#">View</a>
+            <h4 style="display: inline-block; float:right"><strong>$200</strong></h4>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <div class="box-element product">
+
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <div class="box-element product">
+
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
